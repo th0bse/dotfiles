@@ -2,3 +2,5 @@
 [user]
 	name = Thorben von Rekowski
 	email = rekowski.thorben@gmail.com
+[core]
+	editor = vim
