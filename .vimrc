@@ -14,7 +14,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
-set colorcolumn=80
+set colorcolumn=72
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 
