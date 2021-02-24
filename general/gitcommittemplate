@@ -1,0 +1,34 @@
+Add your title here
+
+# Describe WHY this change is happening, WHAT problem you are adressing
+# and HOW you intended to fix that problem. If there is no problem but a
+# new feature, make sure to reference the appropriate GitHub issue.
+
+# Also see Issues:
+# - 
+# - 
+#
+# For the subject line:
+#  * Use 50 characters maximum.
+#  * Do not use sentence-ending period.
+# 
+# Subject line imperative uppercase verbs:
+#  * Add = Create a capability e.g. feature, test, dependency
+#  * Drop = Delete a capability e.g. feature, test, dependency
+#  * Fix = Fix an issue e.g. bug, typo, accident, misstatement
+#  * Bump = Increase the version of something e.g. a dependency
+#  * Make = Change the build process, or tools, or infrastructure
+#  * Start = Begin doing something e.g. enable a toggle, feature flag, etc.
+#  * Stop End doing something e.g. disable a toggle, feature flag, etc.
+#  * Optimize = A change that MUST be just about performance
+#  * Document = A change that MUST be only in the documentation
+#  * Refactor = A change that MUST be just refactoring
+#  * Reformat = A change that MUST be just format
+#  * Rephrase = A change that MUST ne just textual
+#
+# For the body text:
+#  * Use as many lines as needed.
+#  * Use 72 characters maximum per line for typical word wrap text.
+
+Author: Thorben von Rekowski <rekowski.thorben@th0bse.com>
+
