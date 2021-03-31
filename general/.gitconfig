@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Thorben von Rekowski
-	email = rekowski.thorben@gmail.com
+	email = rekowski.thorben@th0bse.com
 	signingkey = 2270CBB5
 [core]
 	editor = vim
