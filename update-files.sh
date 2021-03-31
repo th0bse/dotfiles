@@ -4,6 +4,6 @@
 # imported into the repo.
 cp ~/.gitconfig ./general/
 cp ~/.config/gitcommittemplate ./general/
-cp ~/.bashrc ./tvrarch/
-cp ~/.vimrc ./tvrarch/
-cp ~/.zshrc ./tvrarch/
+cp ~/.bashrc ./archtvr/
+cp ~/.vimrc ./archtvr/
+cp ~/.zshrc ./archtvr/
