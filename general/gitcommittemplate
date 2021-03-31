@@ -1,34 +1,44 @@
-Add your title here
+Add title here
+# <type>[(<scope)]: <Subject> # capitalize subject
 
-# Describe WHY this change is happening, WHAT problem you are adressing
-# and HOW you intended to fix that problem. If there is no problem but a
-# new feature, make sure to reference the appropriate GitHub issue.
+Add body here
 
-# Also see Issues:
-# - 
-# - 
-#
+# Reference GitHub issues with #<issue number>
+Fixes:
+See also:
+# Choose one line, Reviewed-by is mainly meant for merging PR's or for
+# committing code others wrote. In that case, the original author also
+# needs to be credited here.
+Author: Thorben von Rekowski <rekowski.thorben@th0bse.com>
+Reviewed-by: Thorben von Rekowski <rekowski.thorben@th0bse.com>
 # For the subject line:
 #  * Use 50 characters maximum.
 #  * Do not use sentence-ending period.
 # 
-# Subject line imperative uppercase verbs:
-#  * Add = Create a capability e.g. feature, test, dependency
-#  * Drop = Delete a capability e.g. feature, test, dependency
-#  * Fix = Fix an issue e.g. bug, typo, accident, misstatement
-#  * Bump = Increase the version of something e.g. a dependency
-#  * Make = Change the build process, or tools, or infrastructure
-#  * Start = Begin doing something e.g. enable a toggle, feature flag, etc.
-#  * Stop End doing something e.g. disable a toggle, feature flag, etc.
-#  * Optimize = A change that MUST be just about performance
-#  * Document = A change that MUST be only in the documentation
-#  * Refactor = A change that MUST be just refactoring
-#  * Reformat = A change that MUST be just format
-#  * Rephrase = A change that MUST ne just textual
+# Subject line types (don't capitalize):
+#  * feat: A new feature
+#  * fix: A bugfix
+#  * refactor: A code change that neither fixes a bug nor adds a feature
+#  * docs: Documentation only changes
+#  * ci: Changes to CI configuration files and scripts
+#  * build: Changes that affect the build system or external dependencies
+#  * test: Changes that only have to do with testing
+#
+# Every commit has to be of one of these types, if the commit belongs to
+# multiple types, it should be splitted into different commits, to
+# enforce concise commits and to avoid "mass commits" like "fixed some
+# bugs and added stuff" and to be able to comply with SemVer more
+# easily.
+#
+#
+# Scopes:
+# 
+# The scope of a commit should be the "unit" of the project that some
+# changes are made to. For example in a java/Groovy/Kotlin Project, this
+# could be the lower-most package.
 #
 # For the body text:
 #  * Use as many lines as needed.
 #  * Use 72 characters maximum per line for typical word wrap text.
 
-Author: Thorben von Rekowski <rekowski.thorben@th0bse.com>
 
