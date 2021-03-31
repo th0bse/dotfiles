@@ -109,3 +109,11 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Custom stuff comes here####################
+
+# This is needed for gpg-agent to work as intended (according to
+# gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html)
+GPG_TTY=$(tty)
+export GPG_TTY
+
