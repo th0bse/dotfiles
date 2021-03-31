@@ -16,8 +16,8 @@ Reviewed-by: Thorben von Rekowski <rekowski.thorben@th0bse.com>
 #  * Do not use sentence-ending period.
 # 
 # Subject line types (don't capitalize):
-#  * feat: A new feature
-#  * fix: A bugfix
+#  * feat: A new feature MINOR
+#  * fix: A bugfix PATCH
 #  * refactor: A code change that neither fixes a bug nor adds a feature
 #  * docs: Documentation only changes
 #  * ci: Changes to CI configuration files and scripts
