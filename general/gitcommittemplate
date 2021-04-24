@@ -3,9 +3,8 @@ Add title here
 
 Add body here
 
-# Reference GitHub issues with #<issue number>
-Fixes:
-See also:
+# Reference issues here:
+
 # Choose one line, Reviewed-by is mainly meant for merging PR's or for
 # committing code others wrote. In that case, the original author also
 # needs to be credited here.
