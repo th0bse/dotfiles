@@ -13,12 +13,12 @@ set path+=**
 " display all matching files when we tab complete
 set wildmenu
 
-"ENABLE LOCAL VIMRC FILES
+" ENABLE LOCAL VIMRC FILES
 " source every vimrc file in current root dir
 set exrc
 " enable secure mode (no shell commands, map commands are displayed
 set secure
 
-"MAXIMUM LINE LENGTH ETC.
+" MAXIMUM LINE LENGTH, LINE NUMBERS ETC.
 set colorcolumn=110
 highlight ColorColumn ctermbg=darkgrey	
