@@ -1,9 +1,11 @@
 # dotfiles
 
 ## Whats in here?
-Most of my dotfiles, even though some of them are pretty old and outdated (might not even work properly).
-In the folders for my private machines (everything except `macbook`), there may be usernames/hostnames
-present, so you may need to manually substitute them with you own ones.
+Most of my dotfiles, at least those in regular use. Since they change pretty regular (configuration is, at
+least for me, a loooong process) I really cannot guarantee that any of the files in here are up to date.
+
+I do try to keep all configs in here at least remotely functional, but I won't guarantee anything. It works
+for me, with my exact setup, it may not work for you with your (at least slightly) different setup.
 
 ## Why is this interesting?
 Short answer: **it's not**.
