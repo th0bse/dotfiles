@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,3 +121,21 @@ export PATH="/usr/local/sbin:$PATH"
 # # gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html)
 GPG_TTY=($tty)
 export GPG_TTY
+
+# make fuzzy command correction with "thefuck" work. If you fucked up,
+# for example typing "git psh" instead of "git push", you can make thefuck
+# correcct the mistake :)
+# See https://github.com/nvbn/thefuck for details
+eval $(thefuck --alias)
+
+# alias nvim as vim, why use vim when we have neovim :)
+alias vim=nvim
+
+# Add the path where homebrew puts its software to the front of PATH, so we actually
+# use those versions in case a different, usually older, version is also installed
+# by apple as a default. (looking at you, stupid java 16)
+export PATH=/usr/local/bin:$PATH
+
+# add ruby and installed ruby-gems to PATH
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
