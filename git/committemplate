@@ -1,0 +1,47 @@
+Add title here
+# <type>[(<scope)]: <Subject> # don't capitalize subject
+
+Add body here
+
+# Reference issues here:
+Issues:
+- 
+# Choose one line, Reviewed-by is mainly meant for merging PR's or for
+# committing code others wrote. In that case, the original author also
+# needs to be credited here.
+
+Author: Your Name <insert.mail@here>
+Reviewed-by: Your Name <insert.mail@here>
+# For the subject line:
+#  * Use 50 characters maximum.
+#  * Do not use sentence-ending period.
+# 
+# Subject line types (don't capitalize):
+#  * feat: A new feature MINOR
+#  * fix: A bugfix PATCH
+#  * refactor: A code change that neither fixes a bug nor adds a feature
+#  * docs: Documentation only changes
+#  * ci: Changes to CI configuration files and scripts
+#  * build: Changes that affect the build system or external dependencies
+#  * test: Changes that only have to do with testing
+#  * chore: Changes like release (generated changelog, bumped versions etc),
+#           changes to gitignore etc.
+#
+# Every commit has to be of one of these types, if the commit belongs to
+# multiple types, it should be splitted into different commits, to
+# enforce concise commits and to avoid "mass commits" like "fixed some
+# bugs and added stuff" and to be able to comply with SemVer more
+# easily.
+#
+#
+# Scopes:
+# 
+# The scope of a commit should be the "unit" of the project that some
+# changes are made to. For example in a java/Groovy/Kotlin Project, this
+# could be the lower-most package.
+#
+# For the body text:
+#  * Use as many lines as needed.
+#  * Use 72 characters maximum per line for typical word wrap text.
+
+
