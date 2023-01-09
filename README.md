@@ -30,7 +30,3 @@ there are the following:
 - `Meslo LGS NF`: The font that I use in my terminal. It is patched with all the NerdFonts stuff to support
   all the glyphs used by the `powerlevel10k` theme. The `*.ttf` files are linked in the `powerlevel10k`
   README. (Read that too, it's also really well written.)
-
-## Why is my color scheme different?
-Again, **read the documentation**. Kitty has many good colorschemes built into it, like gruvbox or solarized.
-[Click here](https://sw.kovidgoyal.net/kitty/kittens/themes/?highlight=color)
