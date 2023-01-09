@@ -1,0 +1,2 @@
+ssh-add ~/.ssh/hetzner
+ssh -N -D 1080 tvr@195.201.83.124
