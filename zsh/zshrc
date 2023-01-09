@@ -95,19 +95,6 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias grmo="~/.scripts/rmorig.sh"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -128,9 +115,6 @@ export GPG_TTY
 # See https://github.com/nvbn/thefuck for details
 eval $(thefuck --alias)
 
-# alias nvim as vim, why use vim when we have neovim :)
-alias vim=nvim
-
 # Add the path where homebrew puts its software to the front of PATH, so we actually
 # use those versions in case a different, usually older, version is also installed
 # by apple as a default. (looking at you, stupid java 16)
@@ -139,3 +123,26 @@ export PATH=/usr/local/bin:$PATH
 # add ruby and installed ruby-gems to PATH
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
+
+# disable powerlevel10k instant prompt warning in the beginning, when output is
+# written to stdout immedately after start
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# put openjdk installed by homebrew in front of path
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+# source the alias file
+source ~/.config/aliases.sh
+
+# do perl stuff
+PATH="/Users/tvr/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/tvr/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/tvr/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/tvr/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/tvr/perl5"; export PERL_MM_OPT;
+
+# mark all functions in the ~/.config/userfunctions directory to be autoloaded (NOT recursive)
+fpath=( ~/.config/userfunctions "${fpath[@]}" )
+# autoload everything in that directory
+autoload -Uz ~/.config/userfunctions/**/*
