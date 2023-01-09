@@ -142,7 +142,7 @@ PERL_LOCAL_LIB_ROOT="/Users/tvr/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_RO
 PERL_MB_OPT="--install_base \"/Users/tvr/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/tvr/perl5"; export PERL_MM_OPT;
 
-# mark all functions in the ~/.config/userfunctions directory to be autoloaded (NOT recursive)
-fpath=( ~/.config/userfunctions "${fpath[@]}" )
+# mark all functions in the ~/.config/zsh/userfunctions directory to be autoloaded (NOT recursive)
+fpath=( ~/.config/zsh/userfunctions "${fpath[@]}" )
 # autoload everything in that directory
-autoload -Uz ~/.config/userfunctions/**/*
+autoload -Uz ~/.config/zsh/userfunctions/**/*
