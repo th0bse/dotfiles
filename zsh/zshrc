@@ -133,7 +133,7 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # source the alias file
-source ~/.config/tmux/aliases.sh
+source ~/.config/zsh/aliases.sh
 
 # do perl stuff
 PATH="/Users/tvr/perl5/bin${PATH:+:${PATH}}"; export PATH;
