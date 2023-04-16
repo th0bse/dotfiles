@@ -41,3 +41,5 @@ done
 #  easiest way to get this working everywhere as non-root)
 echo "creating dummy .zshrc in $HOME directory..."
 echo "source "$conf_base_dir/zsh/zshrc"" >> "$HOME/.zshrc"
+
+
