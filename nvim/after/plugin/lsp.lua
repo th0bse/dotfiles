@@ -13,6 +13,7 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "<leader>nd", function() vim.diagnostic.goto_next() end, opts)
   vim.keymap.set("n", "<leader>pd", function() vim.diagnostic.goto_prev() end, opts)
   vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
+  vim.keymap.set("n", "<leader>fd", function() vim.lsp.buf.code_action() end, opts)
 end)
 
 -- have mason make sure that at least these language servers are installed
@@ -35,6 +36,9 @@ lsp.set_sign_icons({
 })
 
 local cmp = require('cmp')
+
+-- we want nvim-jdtls to have full control over the setup
+lsp.skip_server_setup({ 'jdtls' })
 
 lsp.setup()
 
