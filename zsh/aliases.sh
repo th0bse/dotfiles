@@ -9,8 +9,9 @@ alias vim=nvim
 alias cls=clear
 
 # various aliases for zeusctl
-alias zctl='start_gwdg_wg; ~/zeusctl/zeusdog.sh'
+alias zctl='start_gwdg_wg; ~/scripts/zeusctl/zeusctl.pl'
 alias zctlp='start_gwdg_wg; zctl punch'
 alias zctll='start_gwdg_wg; zctl lunch'
 alias zctls='start_gwdg_wg; zctl status'
 alias zctlr='start_gwdg_wg; zctl report'
+alias zctle='start_gwdg_wg; colleague_status'

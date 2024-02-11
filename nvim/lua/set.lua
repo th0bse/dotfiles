@@ -3,7 +3,7 @@ vim.opt.relativenumber = true -- enable relative line numbers
 
 vim.opt.tabstop = 4 -- make tabs 4 characters long
 vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 2 -- make indenting 4 characters instead of 8
+vim.opt.shiftwidth = 4 -- make indenting 4 characters instead of 8
 vim.opt.expandtab = true -- use spaces instead of tabs
 
 vim.opt.smartindent = true -- better indenting

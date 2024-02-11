@@ -1,4 +1,4 @@
-local lualine = require("lualine")
+local ll = require('lualine')
 
 local diagnostics = {
     "diagnostics",
@@ -25,21 +25,22 @@ local location = {
     padding = 1,
 }
 
-lualine.setup {
+local setup = {
     options = {
         globalstatus = true,
         icons_enabled = true,
         theme = "gruvbox",
-        disabled_filetypes = { "alpha", "dashbpard" },
+        disabled_filetypes = { "alpha", "dashboard" },
         always_divide_middle = true,
     },
     sections = {
         lualine_a = { "mode" },
         lualine_b = { "branch" },
         lualine_c = { diagnostics },
-        lualine_x = { diff,  "encoding", filetype },
+        lualine_x = { diff, "encoding", filetype },
         lualine_y = { location },
-        lualine_z = { "progress" }
+        lualine_z = { "progress" },
     },
 }
 
+ll.setup(setup)
